@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc.html#a701cd5c31db8455b42b16c5226b1e456"><param name="Name" value="ArgMsg"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc.html#a701cd5c31db8455b42b16c5226b1e456"><param name="Name" value="VaExc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#ad7bb2c449c64e2ea7fb38cff28075705"><param name="Name" value="VaExc::_wrappers::ArgMsg"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a8e70c2267c061daddc8778d16fd81ec2"><param name="Name" value="ErrorInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1_exception.html#af13faa3d0a78c38c70252255aaf926ec"><param name="Name" value="Exception"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_filename.html#a8cfa8a2d44c59823dcaab8de59b74c78"><param name="Name" value="file"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_function.html#a0a17c88352f57faf0778984410b9103f"><param name="Name" value="func"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#abb528f3a7b6274b5676d2bd9b2476b7a"><param name="Name" value="info"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_line.html#acd4eea406c8d73c21ff7d14786ff980b"><param name="Name" value="line"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#a81db0c6564756e1bbdfa00cb129464d6"><param name="Name" value="MAX_EXC_COUNT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#a6912a4c673354b7888697acc7b998a00"><param name="Name" value="MAX_INFO_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#aad5ec6136f6195d13e0b307b0155f10e"><param name="Name" value="MAX_MSG_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#a35ed90979f7e7d16fc3c9fd6f3f86de0"><param name="Name" value="msg"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#a35ed90979f7e7d16fc3c9fd6f3f86de0"><param name="Name" value="VaExc::_wrappers::ArgMsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html#a0d538b7c0c2f1217ddbd633876a4bae5"><param name="Name" value="VaExc::_wrappers::ArgMsgConstexpr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#a3ef4fb5234c0e1806cceb6adc7b7952d"><param name="Name" value="NOT_ENOUGH_SPACE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#aab0e41d60c1e391ce02ca157f0ece87d"><param name="Name" value="NOT_ENOUGH_SPACE_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#a8655907b7dc8b4d18a7c9dad04355d81"><param name="Name" value="operator""_file"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#ae8ad698ba9e4abcd965c1c2e38fc4ff6"><param name="Name" value="operator""_func"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#a3dbcc12c461e252ba8a515078da4eabe"><param name="Name" value="operator""_line"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#a9fd72d243b5f2b1d7d41d64c399e0368"><param name="Name" value="operator""_msg"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a00a0be51a306cd94860f3b106f8ec84d"><param name="Name" value="operator="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc.html"><param name="Name" value="VaExc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html"><param name="Name" value="VaExc::_control"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#a81db0c6564756e1bbdfa00cb129464d6"><param name="Name" value="MAX_EXC_COUNT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#a6912a4c673354b7888697acc7b998a00"><param name="Name" value="MAX_INFO_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#aad5ec6136f6195d13e0b307b0155f10e"><param name="Name" value="MAX_MSG_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#a3ef4fb5234c0e1806cceb6adc7b7952d"><param name="Name" value="NOT_ENOUGH_SPACE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__control.html#aab0e41d60c1e391ce02ca157f0ece87d"><param name="Name" value="NOT_ENOUGH_SPACE_SIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__error_info.html"><param name="Name" value="VaExc::_errorInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html"><param name="Name" value="VaExc::_errorInfo::ErrorInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a8e70c2267c061daddc8778d16fd81ec2"><param name="Name" value="ErrorInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#abb528f3a7b6274b5676d2bd9b2476b7a"><param name="Name" value="info"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a00a0be51a306cd94860f3b106f8ec84d"><param name="Name" value="operator="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a5dcada9ad51894ce7ba3c1529d25707d"><param name="Name" value="writeInfoWithCaption"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html"><param name="Name" value="VaExc::_literals"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#a8655907b7dc8b4d18a7c9dad04355d81"><param name="Name" value="operator""_file"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#ae8ad698ba9e4abcd965c1c2e38fc4ff6"><param name="Name" value="operator""_func"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#a3dbcc12c461e252ba8a515078da4eabe"><param name="Name" value="operator""_line"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__literals.html#a9fd72d243b5f2b1d7d41d64c399e0368"><param name="Name" value="operator""_msg"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc_1_1__wrappers.html"><param name="Name" value="VaExc::_wrappers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_filename.html"><param name="Name" value="VaExc::_wrappers::ArgFilename"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_filename.html#a8cfa8a2d44c59823dcaab8de59b74c78"><param name="Name" value="file"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_function.html"><param name="Name" value="VaExc::_wrappers::ArgFunction"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_function.html#a0a17c88352f57faf0778984410b9103f"><param name="Name" value="func"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_line.html"><param name="Name" value="VaExc::_wrappers::ArgLine"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_line.html#acd4eea406c8d73c21ff7d14786ff980b"><param name="Name" value="line"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html"><param name="Name" value="VaExc::_wrappers::ArgMsg"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#ad7bb2c449c64e2ea7fb38cff28075705"><param name="Name" value="ArgMsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#a35ed90979f7e7d16fc3c9fd6f3f86de0"><param name="Name" value="msg"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html"><param name="Name" value="VaExc::_wrappers::ArgMsgConstexpr"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html#a0d538b7c0c2f1217ddbd633876a4bae5"><param name="Name" value="msg"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1_exception.html"><param name="Name" value="VaExc::Exception"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1_exception.html#af13faa3d0a78c38c70252255aaf926ec"><param name="Name" value="Exception"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1_exception.html#a43f332b702c6e9812f37193b8512bb62"><param name="Name" value="what"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_va_exc.html#a701cd5c31db8455b42b16c5226b1e456"><param name="Name" value="VaExc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1_exception.html#a43f332b702c6e9812f37193b8512bb62"><param name="Name" value="what"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a5dcada9ad51894ce7ba3c1529d25707d"><param name="Name" value="writeInfoWithCaption"></OBJECT>
+</UL>
+</BODY>
+</HTML>

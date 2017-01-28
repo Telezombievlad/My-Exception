@@ -1,0 +1,71 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=VaException
+
+[WINDOWS]
+main="VaException","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_va_exception_8hpp_source.html
+namespace_va_exc.html
+class_va_exc_1_1_exception.html
+class_va_exc_1_1_exception-members.html
+namespace_va_exc_1_1__control.html
+namespace_va_exc_1_1__error_info.html
+class_va_exc_1_1__error_info_1_1_error_info.html
+class_va_exc_1_1__error_info_1_1_error_info-members.html
+namespace_va_exc_1_1__literals.html
+namespace_va_exc_1_1__wrappers.html
+struct_va_exc_1_1__wrappers_1_1_arg_filename.html
+struct_va_exc_1_1__wrappers_1_1_arg_filename-members.html
+struct_va_exc_1_1__wrappers_1_1_arg_function.html
+struct_va_exc_1_1__wrappers_1_1_arg_function-members.html
+struct_va_exc_1_1__wrappers_1_1_arg_line.html
+struct_va_exc_1_1__wrappers_1_1_arg_line-members.html
+struct_va_exc_1_1__wrappers_1_1_arg_msg.html
+struct_va_exc_1_1__wrappers_1_1_arg_msg-members.html
+struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html
+struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr-members.html
+graph_legend.html
+dir_68267d1309a1af8e8297ef4c3efbcdba.html
+index.html
+namespaces.html
+namespacemembers.html
+namespacemembers_func.html
+namespacemembers_vars.html
+annotated.html
+classes.html
+hierarchy.html
+inherits.html
+functions.html
+functions_func.html
+files.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+class_va_exc_1_1_exception__inherit__graph.png
+class_va_exc_1_1_exception__coll__graph.png
+graph_legend.png
+inherit_graph_0.png
+inherit_graph_1.png
+inherit_graph_2.png
+inherit_graph_3.png
+inherit_graph_4.png
+inherit_graph_5.png
+inherit_graph_6.png

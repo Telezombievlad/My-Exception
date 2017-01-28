@@ -1,0 +1,113 @@
+\hypertarget{namespace_va_exc_1_1__literals}{}\section{Va\+Exc\+:\+:\+\_\+literals Namespace Reference}
+\label{namespace_va_exc_1_1__literals}\index{Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}}
+
+
+User-\/defined literals for convinient wrapping.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr}{\+\_\+wrappers\+::\+Arg\+Msg\+Constexpr} \hyperlink{namespace_va_exc_1_1__literals_a9fd72d243b5f2b1d7d41d64c399e0368}{operator\char`\"{}\char`\"{}\+\_\+msg} (const char $\ast$str, size\+\_\+t) noexcept
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_va_exc_1_1_exception}{Exception} message. \end{DoxyCompactList}\item 
+constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_filename}{\+\_\+wrappers\+::\+Arg\+Filename} \hyperlink{namespace_va_exc_1_1__literals_a8655907b7dc8b4d18a7c9dad04355d81}{operator\char`\"{}\char`\"{}\+\_\+file} (const char $\ast$str, size\+\_\+t) noexcept
+\begin{DoxyCompactList}\small\item\em Filename of the file in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_function}{\+\_\+wrappers\+::\+Arg\+Function} \hyperlink{namespace_va_exc_1_1__literals_ae8ad698ba9e4abcd965c1c2e38fc4ff6}{operator\char`\"{}\char`\"{}\+\_\+func} (const char $\ast$str, size\+\_\+t) noexcept
+\begin{DoxyCompactList}\small\item\em Function name in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_line}{\+\_\+wrappers\+::\+Arg\+Line} \hyperlink{namespace_va_exc_1_1__literals_a3dbcc12c461e252ba8a515078da4eabe}{operator\char`\"{}\char`\"{}\+\_\+line} (unsigned long long int line) noexcept
+\begin{DoxyCompactList}\small\item\em Call line number in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User-\/defined literals for convinient wrapping. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_va_exc_1_1__literals_a8655907b7dc8b4d18a7c9dad04355d81}\label{namespace_va_exc_1_1__literals_a8655907b7dc8b4d18a7c9dad04355d81}} 
+\index{Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}!operator\char`\"{}\char`\"{}\+\_\+file@{operator""""\+\_\+file}}
+\index{operator\char`\"{}\char`\"{}\+\_\+file@{operator""""\+\_\+file}!Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}}
+\subsubsection{\texorpdfstring{operator""""\+\_\+file()}{operator""\_file()}}
+{\footnotesize\ttfamily constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_filename}{\+\_\+wrappers\+::\+Arg\+Filename} Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+file (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Filename of the file in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_va_exc_1_1_exception}{Exception}, V\+A\+E\+X\+C\+\_\+\+P\+OS 
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Examples}
+
+\begin{DoxyCode}
+Exception(\textcolor{stringliteral}{"src/File.hpp"}\_file);
+
+Exception(VAEXC\_POS); \textcolor{comment}{// sometimes better option}
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_va_exc_1_1__literals_ae8ad698ba9e4abcd965c1c2e38fc4ff6}\label{namespace_va_exc_1_1__literals_ae8ad698ba9e4abcd965c1c2e38fc4ff6}} 
+\index{Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}!operator\char`\"{}\char`\"{}\+\_\+func@{operator""""\+\_\+func}}
+\index{operator\char`\"{}\char`\"{}\+\_\+func@{operator""""\+\_\+func}!Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}}
+\subsubsection{\texorpdfstring{operator""""\+\_\+func()}{operator""\_func()}}
+{\footnotesize\ttfamily constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_function}{\+\_\+wrappers\+::\+Arg\+Function} Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+func (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function name in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_va_exc_1_1_exception}{Exception}, V\+A\+E\+X\+C\+\_\+\+P\+OS 
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Examples}
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} foo()
+\{
+    \textcolor{keywordflow}{throw} Exception(\textcolor{stringliteral}{"void foo()"}\_func);
+
+    \textcolor{keywordflow}{throw} Exception(VAEXC\_POS);  \textcolor{comment}{// a little better option}
+\}
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_va_exc_1_1__literals_a3dbcc12c461e252ba8a515078da4eabe}\label{namespace_va_exc_1_1__literals_a3dbcc12c461e252ba8a515078da4eabe}} 
+\index{Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}!operator\char`\"{}\char`\"{}\+\_\+line@{operator""""\+\_\+line}}
+\index{operator\char`\"{}\char`\"{}\+\_\+line@{operator""""\+\_\+line}!Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}}
+\subsubsection{\texorpdfstring{operator""""\+\_\+line()}{operator""\_line()}}
+{\footnotesize\ttfamily constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_line}{\+\_\+wrappers\+::\+Arg\+Line} Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+line (\begin{DoxyParamCaption}\item[{unsigned long long int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Call line number in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_va_exc_1_1_exception}{Exception}, V\+A\+E\+X\+C\+\_\+\+P\+OS 
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Examples}
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{throw} Exception(228\_line);
+
+\textcolor{keywordflow}{throw} Exception(VAEXC\_POS); \textcolor{comment}{// ALWAYS MUCH BETTER}
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespace_va_exc_1_1__literals_a9fd72d243b5f2b1d7d41d64c399e0368}\label{namespace_va_exc_1_1__literals_a9fd72d243b5f2b1d7d41d64c399e0368}} 
+\index{Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}!operator\char`\"{}\char`\"{}\+\_\+msg@{operator""""\+\_\+msg}}
+\index{operator\char`\"{}\char`\"{}\+\_\+msg@{operator""""\+\_\+msg}!Va\+Exc\+::\+\_\+literals@{Va\+Exc\+::\+\_\+literals}}
+\subsubsection{\texorpdfstring{operator""""\+\_\+msg()}{operator""\_msg()}}
+{\footnotesize\ttfamily constexpr \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr}{\+\_\+wrappers\+::\+Arg\+Msg\+Constexpr} Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+msg (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\hyperlink{class_va_exc_1_1_exception}{Exception} message. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_va_exc_1_1_exception}{Exception}, V\+A\+E\+X\+C\+\_\+\+P\+OS 
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Examples}
+
+\begin{DoxyCode}
+Exception(\textcolor{stringliteral}{"Oh no! Exception happened!"}\_msg);
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}

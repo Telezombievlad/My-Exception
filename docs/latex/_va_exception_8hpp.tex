@@ -1,0 +1,114 @@
+\hypertarget{_va_exception_8hpp}{}\section{/\+Users/vladislav\+\_\+aleinik/\+Dropbox/\+Programming/cpp/2016-\/2017/my\+\_\+exception\+\_\+improved/src/\+Va\+Exception.hpp File Reference}
+\label{_va_exception_8hpp}\index{/\+Users/vladislav\+\_\+aleinik/\+Dropbox/\+Programming/cpp/2016-\/2017/my\+\_\+exception\+\_\+improved/src/\+Va\+Exception.\+hpp@{/\+Users/vladislav\+\_\+aleinik/\+Dropbox/\+Programming/cpp/2016-\/2017/my\+\_\+exception\+\_\+improved/src/\+Va\+Exception.\+hpp}}
+
+
+A little more convinient tool for throwing exceptions.  
+
+
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+Include dependency graph for Va\+Exception.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_va_exception_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Msg}
+\begin{DoxyCompactList}\small\item\em Wrapper that stores exception message. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Msg\+Constexpr}
+\begin{DoxyCompactList}\small\item\em Just like \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg}{Arg\+Msg}, but for c-\/style strings (not for user). \end{DoxyCompactList}\item 
+struct \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_filename}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Filename}
+\begin{DoxyCompactList}\small\item\em Wrapper to store filename of the file in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_function}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Function}
+\begin{DoxyCompactList}\small\item\em Wrapper to store function name in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_line}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Line}
+\begin{DoxyCompactList}\small\item\em Wrapper to store call line number in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+class \hyperlink{class_va_exc_1_1__error_info_1_1_error_info}{Va\+Exc\+::\+\_\+error\+Info\+::\+Error\+Info}
+\begin{DoxyCompactList}\small\item\em Class, which is only useful in \hyperlink{class_va_exc_1_1_exception}{Exception} implementation (not for user). \end{DoxyCompactList}\item 
+class \hyperlink{class_va_exc_1_1_exception}{Va\+Exc\+::\+Exception}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_va_exc_1_1_exception}{Exception}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_va_exc}{Va\+Exc}
+\begin{DoxyCompactList}\small\item\em Namespace with the whole code. \end{DoxyCompactList}\item 
+ \hyperlink{namespace_va_exc_1_1__control}{Va\+Exc\+::\+\_\+control}
+\begin{DoxyCompactList}\small\item\em Control over program behavior. \end{DoxyCompactList}\item 
+ \hyperlink{namespace_va_exc_1_1__wrappers}{Va\+Exc\+::\+\_\+wrappers}
+\begin{DoxyCompactList}\small\item\em Wrappers to be used in \hyperlink{class_va_exc_1_1_exception}{Exception} constructor (Exception()), mostly not for user use. \end{DoxyCompactList}\item 
+ \hyperlink{namespace_va_exc_1_1__literals}{Va\+Exc\+::\+\_\+literals}
+\begin{DoxyCompactList}\small\item\em User-\/defined literals for convinient wrapping. \end{DoxyCompactList}\item 
+ \hyperlink{namespace_va_exc_1_1__error_info}{Va\+Exc\+::\+\_\+error\+Info}
+\begin{DoxyCompactList}\small\item\em Namespace for \hyperlink{class_va_exc_1_1__error_info_1_1_error_info}{Error\+Info} struct to store information conviniently (not for user). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_va_exception_8hpp_a3e7cd77d6c37a64acdd71bc7cce648ff}\label{_va_exception_8hpp_a3e7cd77d6c37a64acdd71bc7cce648ff}} 
+\#define {\bfseries H\+E\+A\+D\+E\+R\+\_\+\+G\+U\+A\+R\+D\+\_\+\+V\+A\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+H\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+ED}~\char`\"{}Va\+Exception.\+hpp\char`\"{}
+\item 
+\mbox{\Hypertarget{_va_exception_8hpp_ac9726d8d8da9d73a6156a2125ec48ff3}\label{_va_exception_8hpp_ac9726d8d8da9d73a6156a2125ec48ff3}} 
+\#define \hyperlink{_va_exception_8hpp_ac9726d8d8da9d73a6156a2125ec48ff3}{V\+A\+E\+X\+C\+\_\+\+P\+OS}~\hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_filename}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Filename}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+), \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_function}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Function}(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+), \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_line}{Va\+Exc\+::\+\_\+wrappers\+::\+Arg\+Line}(\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em The define for convinience in Exception creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_va_exc_a701cd5c31db8455b42b16c5226b1e456}\label{namespace_va_exc_a701cd5c31db8455b42b16c5226b1e456}} 
+using {\bfseries Va\+Exc\+::\+Arg\+Msg} = \+\_\+wrappers\+::\+Arg\+Msg
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \+\_\+wrappers\+::\+Arg\+Msg\+Constexpr \hyperlink{namespace_va_exc_1_1__literals_a9fd72d243b5f2b1d7d41d64c399e0368}{Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+msg} (const char $\ast$str, size\+\_\+t) noexcept
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_va_exc_1_1_exception}{Exception} message. \end{DoxyCompactList}\item 
+constexpr \+\_\+wrappers\+::\+Arg\+Filename \hyperlink{namespace_va_exc_1_1__literals_a8655907b7dc8b4d18a7c9dad04355d81}{Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+file} (const char $\ast$str, size\+\_\+t) noexcept
+\begin{DoxyCompactList}\small\item\em Filename of the file in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+constexpr \+\_\+wrappers\+::\+Arg\+Function \hyperlink{namespace_va_exc_1_1__literals_ae8ad698ba9e4abcd965c1c2e38fc4ff6}{Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+func} (const char $\ast$str, size\+\_\+t) noexcept
+\begin{DoxyCompactList}\small\item\em Function name in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\item 
+constexpr \+\_\+wrappers\+::\+Arg\+Line \hyperlink{namespace_va_exc_1_1__literals_a3dbcc12c461e252ba8a515078da4eabe}{Va\+Exc\+::\+\_\+literals\+::operator\char`\"{}\char`\"{}\+\_\+line} (unsigned long long int line) noexcept
+\begin{DoxyCompactList}\small\item\em Call line number in which \hyperlink{class_va_exc_1_1_exception}{Exception} is created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_va_exc_1_1__control_a6912a4c673354b7888697acc7b998a00}\label{namespace_va_exc_1_1__control_a6912a4c673354b7888697acc7b998a00}} 
+const size\+\_\+t \hyperlink{namespace_va_exc_1_1__control_a6912a4c673354b7888697acc7b998a00}{Va\+Exc\+::\+\_\+control\+::\+M\+A\+X\+\_\+\+I\+N\+F\+O\+\_\+\+S\+I\+ZE} = 400
+\begin{DoxyCompactList}\small\item\em The maximumum amount of bytes an \hyperlink{class_va_exc_1_1_exception}{Exception} can store. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_va_exc_1_1__control_aad5ec6136f6195d13e0b307b0155f10e}\label{namespace_va_exc_1_1__control_aad5ec6136f6195d13e0b307b0155f10e}} 
+const size\+\_\+t \hyperlink{namespace_va_exc_1_1__control_aad5ec6136f6195d13e0b307b0155f10e}{Va\+Exc\+::\+\_\+control\+::\+M\+A\+X\+\_\+\+M\+S\+G\+\_\+\+S\+I\+ZE} = 200
+\begin{DoxyCompactList}\small\item\em The maximumum amount of bytes an explanation message in \hyperlink{class_va_exc_1_1_exception}{Exception} can store. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_va_exc_1_1__control_a81db0c6564756e1bbdfa00cb129464d6}\label{namespace_va_exc_1_1__control_a81db0c6564756e1bbdfa00cb129464d6}} 
+const size\+\_\+t \hyperlink{namespace_va_exc_1_1__control_a81db0c6564756e1bbdfa00cb129464d6}{Va\+Exc\+::\+\_\+control\+::\+M\+A\+X\+\_\+\+E\+X\+C\+\_\+\+C\+O\+U\+NT} = 4
+\begin{DoxyCompactList}\small\item\em The maximumum amount of \hyperlink{class_va_exc_1_1_exception}{Exception} instances in \char`\"{}caused-\/by\char`\"{} chains. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_va_exc_1_1__control_aab0e41d60c1e391ce02ca157f0ece87d}\label{namespace_va_exc_1_1__control_aab0e41d60c1e391ce02ca157f0ece87d}} 
+const size\+\_\+t \hyperlink{namespace_va_exc_1_1__control_aab0e41d60c1e391ce02ca157f0ece87d}{Va\+Exc\+::\+\_\+control\+::\+N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+S\+P\+A\+C\+E\+\_\+\+S\+I\+ZE} = 4
+\begin{DoxyCompactList}\small\item\em The size of N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+S\+P\+A\+CE array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_va_exc_1_1__control_a3ef4fb5234c0e1806cceb6adc7b7952d}\label{namespace_va_exc_1_1__control_a3ef4fb5234c0e1806cceb6adc7b7952d}} 
+const char \hyperlink{namespace_va_exc_1_1__control_a3ef4fb5234c0e1806cceb6adc7b7952d}{Va\+Exc\+::\+\_\+control\+::\+N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+S\+P\+A\+CE} \mbox{[}N\+O\+T\+\_\+\+E\+N\+O\+U\+G\+H\+\_\+\+S\+P\+A\+C\+E\+\_\+\+S\+I\+ZE+1\mbox{]} = \char`\"{}\textbackslash{}n...\char`\"{}
+\begin{DoxyCompactList}\small\item\em The string, which is printed out in case there\textquotesingle{}s not enough space to print something. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A little more convinient tool for throwing exceptions. 
+
+\begin{DoxyParagraph}{Version}
+17.\+01.\+09 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Copyright}
+(C) Vladislav Aleinik (\href{mailto:valeinik00@gmail.com}{\tt valeinik00@gmail.\+com}) 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Date}
+2017-\/01-\/09 
+\end{DoxyParagraph}
+
+
+Va\+Exception is just like std\+::exception, but it gives more information on the error (it allows you to pass line, function and file, in which the exception was thrown). To learn more watch Exception docs.
+
+\begin{DoxyWarning}{Warning}
+Va\+Exception is currently (and forever) in alpha state, so bugs can occur. 
+\end{DoxyWarning}

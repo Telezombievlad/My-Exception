@@ -1,0 +1,85 @@
+\hypertarget{struct_arg_msg_constexpr}{}\section{Arg\+Msg\+Constexpr Struct Reference}
+\label{struct_arg_msg_constexpr}\index{Arg\+Msg\+Constexpr@{Arg\+Msg\+Constexpr}}
+
+
+Namespace with the whole code.  
+
+
+
+
+{\ttfamily \#include $<$Va\+Exception.\+hpp$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{struct_arg_msg_constexpr_af23e14892351bf00276664bcc5e401c0}{msg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Namespace with the whole code. 
+
+This is for convinience and recognition, just like namespace std.
+
+
+\begin{DoxyCode}
+ VaExc::Exception(...);
+*/
+\textcolor{keyword}{namespace }VaExc
+\{
+    \textcolor{keyword}{namespace }\_control
+    \{
+        \textcolor{comment}{// Some bounds:}
+        \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} MAX\_INFO\_SIZE = 400; 
+        \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t}  MAX\_MSG\_SIZE = 200; 
+        \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} MAX\_EXC\_COUNT = 4;   
+
+        \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} NOT\_ENOUGH\_SPACE\_SIZE = 4; 
+        \textcolor{keyword}{const} \textcolor{keywordtype}{char}   NOT\_ENOUGH\_SPACE[NOT\_ENOUGH\_SPACE\_SIZE + 1] = \textcolor{stringliteral}{"\(\backslash\)n..."}; 
+        
+    \} \textcolor{comment}{// namespace \_control}
+
+    \textcolor{keyword}{namespace }\_wrappers
+    \{
+        \textcolor{keyword}{struct }\hyperlink{_va_exception_8hpp_addf88c17f195d1c61ad206e0718b5fcb}{ArgMsg}
+        \{
+            \textcolor{comment}{// Variable:}
+            \textcolor{keywordtype}{char} msg[\_control::MAX\_MSG\_SIZE + 1]; 
+
+            \textcolor{comment}{// Ctor:}
+\textcolor{comment}{}            \textcolor{keyword}{template} <\textcolor{keyword}{typename}... Args>
+            \hyperlink{_va_exception_8hpp_addf88c17f195d1c61ad206e0718b5fcb}{ArgMsg}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* format, Args&&... args) noexcept : 
+                \hyperlink{struct_arg_msg_constexpr_af23e14892351bf00276664bcc5e401c0}{msg} ()
+            \{
+                \textcolor{keywordtype}{int} written = std::snprintf(msg, \textcolor{keyword}{sizeof}(msg), format, std::forward<Args>(args)...);
+
+                \textcolor{keywordflow}{if} (written < 0)
+                \{
+                    written = std::sprintf(msg, \textcolor{stringliteral}{"%s"}, \_control::NOT\_ENOUGH\_SPACE);
+
+                    \textcolor{keywordflow}{if} (written < 0)
+                    \{
+                        msg[0] = \textcolor{charliteral}{'\(\backslash\)0'};
+                    \}
+                \}
+            \}
+        \};
+
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\hyperlink{class_exception}{Exception} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_arg_msg_constexpr_af23e14892351bf00276664bcc5e401c0}\label{struct_arg_msg_constexpr_af23e14892351bf00276664bcc5e401c0}} 
+\index{Arg\+Msg\+Constexpr@{Arg\+Msg\+Constexpr}!msg@{msg}}
+\index{msg@{msg}!Arg\+Msg\+Constexpr@{Arg\+Msg\+Constexpr}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily const char$\ast$ Arg\+Msg\+Constexpr\+::msg}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/vladislav\+\_\+aleinik/\+Dropbox/\+Programming/cpp/2016-\/2017/my\+\_\+exception\+\_\+improved/src/\hyperlink{_va_exception_8hpp}{Va\+Exception.\+hpp}\end{DoxyCompactItemize}

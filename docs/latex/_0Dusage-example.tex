@@ -1,0 +1,44 @@
+\hypertarget{_0Dusage-example}{}\section{@usage}
+The Exception Exception is just like std\+::exception, but it gives more information on the error (func, line, file), Exception\+::what() can print arguments in any order (\mbox{[}msg, line, func\mbox{]} or \mbox{[}func, msg, line\mbox{]}), Exception is inherited from std\+::exception (thus, it is a std\+::exception), Exception supports formatted strings, just like std\+::printf.
+
+\begin{DoxySeeAlso}{See also}
+operator\char`\"{}\char`\"{}\+\_\+msg(), operator\char`\"{}\char`\"{}\+\_\+file(), operator\char`\"{}\char`\"{}\+\_\+func(), operator\char`\"{}\char`\"{}\+\_\+line(), \+\_\+wrappers\+::\+Arg\+Msg\+::\+Arg\+Msg(), V\+A\+E\+X\+C\+\_\+\+P\+OS
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Examples}
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{try}
+\{
+    \textcolor{keyword}{using namespace }\hyperlink{namespace_va_exc}{VaExc};
+
+    \textcolor{comment}{// ArgMsg is implemented via std::sprintf, so formatting is the same.}
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg}{ArgMsg}(\textcolor{stringliteral}{"Error code: %d"}, error\_code), VAEXC\_POS);
+
+    ...
+\}
+\textcolor{keywordflow}{catch} (\hyperlink{class_va_exc_1_1_exception}{Exception}& exc)
+\{
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\textcolor{stringliteral}{"Exception occured!!!"}, exc);
+\}
+
+...
+
+try
+\{
+    \textcolor{keyword}{using namespace }\hyperlink{namespace_va_exc}{VaExc};
+
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\textcolor{stringliteral}{"Aaaa!"}\_msg, \textcolor{stringliteral}{"Fuuuunc!11!1"}\_func, 1111\_line);
+
+    ...
+\}
+\textcolor{keywordflow}{catch} (std::exception& exc) \textcolor{comment}{// Also catches Exception}
+\{
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\textcolor{stringliteral}{"Exception occured!!!"}, VAEXC\_POS, exc);
+\}
+\end{DoxyCode}
+
+\end{DoxyParagraph}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 

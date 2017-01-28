@@ -1,0 +1,87 @@
+\hypertarget{class_va_exc_1_1_exception}{}\section{Va\+Exc\+:\+:Exception Class Reference}
+\label{class_va_exc_1_1_exception}\index{Va\+Exc\+::\+Exception@{Va\+Exc\+::\+Exception}}
+
+
+The \hyperlink{class_va_exc_1_1_exception}{Exception}.  
+
+
+
+
+{\ttfamily \#include $<$Va\+Exception.\+hpp$>$}
+
+
+
+Inheritance diagram for Va\+Exc\+:\+:Exception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_va_exc_1_1_exception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Va\+Exc\+:\+:Exception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_va_exc_1_1_exception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_va_exc_1_1_exception_af13faa3d0a78c38c70252255aaf926ec}\label{class_va_exc_1_1_exception_af13faa3d0a78c38c70252255aaf926ec}} 
+{\footnotesize template$<$class... Args$>$ }\\{\bfseries Exception} (Args \&\&... args) noexcept
+\item 
+\mbox{\Hypertarget{class_va_exc_1_1_exception_a43f332b702c6e9812f37193b8512bb62}\label{class_va_exc_1_1_exception_a43f332b702c6e9812f37193b8512bb62}} 
+virtual const char $\ast$ {\bfseries what} () const noexcept override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_va_exc_1_1_exception}{Exception}. 
+
+\hyperlink{class_va_exc_1_1_exception}{Exception} is just like std\+::exception, but it gives more information on the error (func, line, file), Exception\+::what() can print arguments in any order (\mbox{[}msg, line, func\mbox{]} or \mbox{[}func, msg, line\mbox{]}), \hyperlink{class_va_exc_1_1_exception}{Exception} is inherited from std\+::exception (thus, it is a std\+::exception), \hyperlink{class_va_exc_1_1_exception}{Exception} supports formatted strings, just like std\+::printf.
+
+\begin{DoxySeeAlso}{See also}
+operator\char`\"{}\char`\"{}\+\_\+msg(), operator\char`\"{}\char`\"{}\+\_\+file(), operator\char`\"{}\char`\"{}\+\_\+func(), operator\char`\"{}\char`\"{}\+\_\+line(), \hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg_ad7bb2c449c64e2ea7fb38cff28075705}{\+\_\+wrappers\+::\+Arg\+Msg\+::\+Arg\+Msg()}, V\+A\+E\+X\+C\+\_\+\+P\+OS
+\end{DoxySeeAlso}
+\begin{DoxyParagraph}{Examples}
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{try}
+\{
+    \textcolor{keyword}{using namespace }\hyperlink{namespace_va_exc}{VaExc};
+
+    \textcolor{comment}{// ArgMsg is implemented via std::sprintf, so formatting is the same.}
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\hyperlink{struct_va_exc_1_1__wrappers_1_1_arg_msg}{ArgMsg}(\textcolor{stringliteral}{"Error code: %d"}, error\_code), VAEXC\_POS);
+
+    ...
+\}
+\textcolor{keywordflow}{catch} (\hyperlink{class_va_exc_1_1_exception}{Exception}& exc)
+\{
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\textcolor{stringliteral}{"Exception occured!!!"}, exc);
+\}
+
+...
+
+try
+\{
+    \textcolor{keyword}{using namespace }\hyperlink{namespace_va_exc}{VaExc};
+
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\textcolor{stringliteral}{"Aaaa!"}\_msg, \textcolor{stringliteral}{"Fuuuunc!11!1"}\_func, 1111\_line);
+
+    ...
+\}
+\textcolor{keywordflow}{catch} (std::exception& exc) \textcolor{comment}{// Also catches Exception}
+\{
+    \textcolor{keywordflow}{throw} \hyperlink{class_va_exc_1_1_exception}{Exception}(\textcolor{stringliteral}{"Exception occured!!!"}, VAEXC\_POS, exc);
+\}
+\end{DoxyCode}
+ 
+\end{DoxyParagraph}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/vladislav\+\_\+aleinik/\+Dropbox/\+Programming/cpp/2016-\/2017/my\+\_\+exception\+\_\+improved/src/Va\+Exception.\+hpp\end{DoxyCompactItemize}

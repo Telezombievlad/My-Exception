@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VaException Documentation"><param name="Local" value="index.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Namespaces"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc"><param name="Local" value="namespace_va_exc.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_control"><param name="Local" value="namespace_va_exc_1_1__control.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_errorInfo"><param name="Local" value="namespace_va_exc_1_1__error_info.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_literals"><param name="Local" value="namespace_va_exc_1_1__literals.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_wrappers"><param name="Local" value="namespace_va_exc_1_1__wrappers.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace Members"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="namespacemembers_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="namespacemembers_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc"><param name="Local" value="namespace_va_exc.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_errorInfo"><param name="Local" value="namespace_va_exc_1_1__error_info.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ErrorInfo"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ErrorInfo"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a2e00a0701be5046029a100ef8e60fa0f"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ErrorInfo"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a8e70c2267c061daddc8778d16fd81ec2"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="~ErrorInfo"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a278268375d5731725d5eba591fc68ec7"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="info"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#abb528f3a7b6274b5676d2bd9b2476b7a"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a00a0be51a306cd94860f3b106f8ec84d"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="writeInfoWithCaption"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html#a5dcada9ad51894ce7ba3c1529d25707d"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_wrappers"><param name="Local" value="namespace_va_exc_1_1__wrappers.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ArgFilename"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_filename.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="file"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_filename.html#a8cfa8a2d44c59823dcaab8de59b74c78"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ArgFunction"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_function.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="func"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_function.html#a0a17c88352f57faf0778984410b9103f"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ArgLine"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_line.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="line"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_line.html#acd4eea406c8d73c21ff7d14786ff980b"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ArgMsg"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ArgMsg"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#ad7bb2c449c64e2ea7fb38cff28075705"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="msg"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html#a35ed90979f7e7d16fc3c9fd6f3f86de0"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ArgMsgConstexpr"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="msg"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html#a0d538b7c0c2f1217ddbd633876a4bae5"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Exception"><param name="Local" value="class_va_exc_1_1_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Exception"><param name="Local" value="class_va_exc_1_1_exception.html#af13faa3d0a78c38c70252255aaf926ec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Exception"><param name="Local" value="class_va_exc_1_1_exception.html#a7e6e71904e5ac5441ebb613cdc10aa3b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="what"><param name="Local" value="class_va_exc_1_1_exception.html#a43f332b702c6e9812f37193b8512bb62"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::_wrappers::ArgFilename"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_filename.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::_wrappers::ArgFunction"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_function.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::_wrappers::ArgLine"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_line.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::_wrappers::ArgMsg"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::_wrappers::ArgMsgConstexpr"><param name="Local" value="struct_va_exc_1_1__wrappers_1_1_arg_msg_constexpr.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::_errorInfo::ErrorInfo"><param name="Local" value="class_va_exc_1_1__error_info_1_1_error_info.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="exception"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VaExc::Exception"><param name="Local" value="class_va_exc_1_1_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Files"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="src"><param name="Local" value="dir_68267d1309a1af8e8297ef4c3efbcdba.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VaException.hpp"><param name="Local" value="_va_exception_8hpp_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

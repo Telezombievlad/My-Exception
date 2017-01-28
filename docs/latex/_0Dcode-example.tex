@@ -1,0 +1,16 @@
+\hypertarget{_0Dcode-example}{}\section{@code}
+The Exception Exception is just like std\+::exception, but it gives more information on the error (func, line, file), Exception\+::what() can print arguments in any order (\mbox{[}msg, line, func\mbox{]} or \mbox{[}func, msg, line\mbox{]}), Exception is inherited from std\+::exception (thus, it is a std\+::exception), Exception supports formatted strings, just like std\+::printf.
+
+\begin{DoxySeeAlso}{See also}
+operator\char`\"{}\char`\"{}\+\_\+msg(), operator\char`\"{}\char`\"{}\+\_\+file(), operator\char`\"{}\char`\"{}\+\_\+func(), operator\char`\"{}\char`\"{}\+\_\+line(), \+\_\+wrappers\+::\+Arg\+Msg\+::\+Arg\+Msg(), \hyperlink{_va_exception_8hpp_ac9726d8d8da9d73a6156a2125ec48ff3}{V\+A\+E\+X\+C\+\_\+\+P\+OS}
+\end{DoxySeeAlso}
+try \{ using namespace \hyperlink{namespace_va_exc}{Va\+Exc};
+
+// Arg\+Msg is implemented via std\+::sprintf, so formatting is the same. throw Exception(Arg\+Msg(\char`\"{}\+Error code\+: \%d\char`\"{}, error\+\_\+code), V\+A\+E\+X\+C\+\_\+\+P\+OS);
+
+... \} catch (Exception\& exc) \{ throw Exception(\char`\"{}\+Exception occured!!!\char`\"{}, exc); \} 
+
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 
