@@ -101,6 +101,10 @@ namespace VaExc
 		struct ArgFilename
 		{
 			const char* file;
+
+			constexpr ArgFilename(const char* filename) :
+				file (filename)
+			{}
 		};
 
 		/** @brief  Wrapper to store function name in which Exception is created.
@@ -110,6 +114,10 @@ namespace VaExc
 		struct ArgFunction
 		{
 			const char* func;
+
+			constexpr ArgFunction(const char* funcName) :
+				func (funcName)
+			{}
 		};
 
 		/** @brief  Wrapper to store call line number in which Exception is created.
@@ -119,6 +127,10 @@ namespace VaExc
 		struct ArgLine
 		{
 			size_t line;
+
+			constexpr ArgLine(size_t lineNum) :
+				line (lineNum)
+			{}
 		};
 
 	}; // namespace _wrappers
@@ -470,6 +482,8 @@ namespace VaExc
 }
 
 /// The define for convinience in Exception creation.
-#define VAEXC_POS VaExc::_wrappers::ArgFilename(__FILE__), VaExc::_wrappers::ArgFunction(__FUNCTION__), VaExc::_wrappers::ArgLine(__LINE__)
+#define VAEXC_POS VaExc::_wrappers::ArgFilename(__FILE__),     \
+                  VaExc::_wrappers::ArgFunction(__FUNCTION__), \
+                  VaExc::_wrappers::ArgLine    (__LINE__)
 
 #endif /*HEADER_GUARD_VA_EXCEPTION_HPP_INCLUDED*/
