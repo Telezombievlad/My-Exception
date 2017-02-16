@@ -1,6 +1,6 @@
 /** @mainpage VaException Documentation
     @brief    A little more convinient tool for throwing exceptions.
-            
+
               $Version: 17.01.09 $
               $Copyright: (C) Vladislav Aleinik (valeinik00@gmail.com) $
               $Date: 2017-01-09 22:13:37 +0400$
@@ -27,7 +27,7 @@
 
             This is for convinience and recognition, just like namespace std.
 
-    @code   
+    @code
             VaExc::Exception(...);
     @endcode
 */
@@ -40,17 +40,17 @@ namespace VaExc
 	namespace _control
 	{
 		// Some bounds:
-		const size_t MAX_INFO_SIZE = 400; ///< The maximumum amount of bytes an Exception can store. 
-		const size_t  MAX_MSG_SIZE = 200; ///< The maximumum amount of bytes an explanation message in Exception can store. 
-		const size_t MAX_EXC_COUNT = 4;   ///< The maximumum amount of Exception instances in "caused-by" chains. 
+		const size_t MAX_INFO_SIZE = 400; ///< The maximumum amount of bytes an Exception can store.
+		const size_t MAX_MSG_SIZE  = 200; ///< The maximumum amount of bytes an explanation message in Exception can store.
+		const size_t MAX_EXC_COUNT = 4;   ///< The maximumum amount of Exception instances in "caused-by" chains.
 
 		const size_t NOT_ENOUGH_SPACE_SIZE = 4; ///< The size of NOT_ENOUGH_SPACE array.
 		const char   NOT_ENOUGH_SPACE[NOT_ENOUGH_SPACE_SIZE + 1] = "\n..."; ///< The string, which is printed out in case there's not enough space to print something.
-		
+
 	} // namespace _control
 
 	/// Wrappers to be used in Exception constructor (Exception()), mostly not for user use.
-	namespace _wrappers 
+	namespace _wrappers
 	{
 		/** @brief  Wrapper that stores exception message.
 
@@ -61,14 +61,14 @@ namespace VaExc
 		*/
 		struct ArgMsg
 		{
-			char msg[_control::MAX_MSG_SIZE + 1]; 
+			char msg[_control::MAX_MSG_SIZE + 1];
 
 			/** @brief   ArgMsg Constructor
 
 				@see     ArgMsg
 			*/
 			template <typename... Args>
-			ArgMsg(const char* format, Args&&... args) noexcept : 
+			explicit ArgMsg(const char* format, Args&&... args) noexcept :
 				msg ()
 			{
 				int written = std::snprintf(msg, sizeof(msg), format, std::forward<Args>(args)...);
@@ -86,7 +86,7 @@ namespace VaExc
 		};
 
 		/** @brief  Just like ArgMsg, but for c-style strings (not for user).
-		    
+
 		    @see    Exception, operator""_msg()
 		*/
 		struct ArgMsgConstexpr
@@ -95,40 +95,40 @@ namespace VaExc
 		};
 
 		/** @brief  Wrapper to store filename of the file in which Exception is created.
-		    
+
 		    @see    Exception, operator""_file()
 		*/
 		struct ArgFilename
 		{
 			const char* file;
 
-			constexpr ArgFilename(const char* filename) :
+			explicit constexpr ArgFilename(const char* filename) :
 				file (filename)
 			{}
 		};
 
 		/** @brief  Wrapper to store function name in which Exception is created.
-		    
+
 		    @see    Exception, operator""_func()
 		*/
 		struct ArgFunction
 		{
 			const char* func;
 
-			constexpr ArgFunction(const char* funcName) :
+			explicit constexpr ArgFunction(const char* funcName) :
 				func (funcName)
 			{}
 		};
 
 		/** @brief  Wrapper to store call line number in which Exception is created.
-		    
+
 		    @see    Exception, operator""_line()
 		*/
 		struct ArgLine
 		{
 			size_t line;
 
-			constexpr ArgLine(size_t lineNum) :
+			explicit constexpr ArgLine(size_t lineNum) :
 				line (lineNum)
 			{}
 		};
@@ -139,7 +139,7 @@ namespace VaExc
 	namespace _literals
 	{
 		/** @brief  Exception message.
-		    
+
 		    @see    Exception, VAEXC_POS
 		    @par    Examples
 		    @usage @code
@@ -149,20 +149,20 @@ namespace VaExc
 		constexpr _wrappers::ArgMsgConstexpr operator""_msg(const char* str, size_t) noexcept { return {str}; }
 
 		/** @brief  Filename of the file in which Exception is created.
-		    
+
 		    @see    Exception, VAEXC_POS
 		    @par    Examples
 		    @usage @code
 		            Exception("src/File.hpp"_file);
 
 		            Exception(VAEXC_POS); // sometimes better option
-		            
+
 		    @endcode
 		*/
 		constexpr _wrappers::ArgFilename operator""_file(const char* str, size_t) noexcept { return {str}; }
- 
+
 		/** @brief  Function name in which Exception is created.
-		    
+
 		    @see    Exception, VAEXC_POS
 		    @par    Examples
 		    @usage @code
@@ -177,7 +177,7 @@ namespace VaExc
 		constexpr _wrappers::ArgFunction operator""_func(const char* str, size_t) noexcept { return {str}; }
 
 		/** @brief  Call line number in which Exception is created.
-		    
+
 		    @see    Exception, VAEXC_POS
 		    @par    Examples
 		    @usage @code
@@ -190,15 +190,15 @@ namespace VaExc
 		{
 			// Code can't have more then that(vvvv) lines.
 			// Human-made code can't.
-			return {static_cast<size_t>(line)}; 
+			return {static_cast<size_t>(line)};
 		}
 
 	} // namespace _literals
 
 	/// Namespace for ErrorInfo struct to store information conviniently (not for user).
 	namespace _errorInfo
-	{	
-		/// Class, which is only useful in Exception implementation (not for user). 
+	{
+		/// Class, which is only useful in Exception implementation (not for user).
 		class ErrorInfo
 		{
 		public:
@@ -224,9 +224,9 @@ namespace VaExc
 					if (filled_ + captionLen + textLen + _control::NOT_ENOUGH_SPACE_SIZE > _control::MAX_INFO_SIZE)
 					{
 						std::strcpy(info_ + filled_, _control::NOT_ENOUGH_SPACE);
-						
+
 						filled_ += _control::NOT_ENOUGH_SPACE_SIZE;
-						
+
 						return false;
 					}
 					else
@@ -256,17 +256,17 @@ namespace VaExc
 	} //  namespace _errorInfo
 
 	/** @brief  The Exception
-	    
+
 	            Exception is just like std::exception, but it gives more information on the error (func, line, file),
 	            Exception::what() can print arguments in any order ([msg, line, func] or [func, msg, line]),
 	            Exception is inherited from std::exception (thus, it is a std::exception),
 	            Exception supports formatted strings, just like std::printf.
 
-	    @see    operator""_msg(), 
-	            operator""_file(), 
-	            operator""_func(), 
-	            operator""_line(), 
-	            _wrappers::ArgMsg::ArgMsg(), 
+	    @see    operator""_msg(),
+	            operator""_file(),
+	            operator""_func(),
+	            operator""_line(),
+	            _wrappers::ArgMsg::ArgMsg(),
 	            VAEXC_POS
 
 	    @par    Examples
@@ -284,7 +284,7 @@ namespace VaExc
 	            {
 	            	throw Exception("Exception occured!!!", exc);
 	            }
-	            
+
                 ...
 
 	            try
@@ -338,7 +338,7 @@ namespace VaExc
 
 	public:
 			template <class... Args>
-			Exception(Args&&... args) noexcept;
+			explicit Exception(Args&&... args) noexcept;
 
 			virtual ~Exception() = default;
 
@@ -421,47 +421,37 @@ namespace VaExc
 		template <class T, class... Args>
 		void Exception::parseArgs(T&&, Args&&...) noexcept
 		{
-			static_assert(sizeof(T) == 0, "VaExc ctor: Unknown argument type (Expected: ArgMsg, ArgFilename, ArgFunction, ArgLine, Exception, std::exception)");
+			static_assert(sizeof(T) == 0, "VaExc ctor: Unknown argument type");
 		}
 
-		void Exception::parseArgs() noexcept {} 
+		void Exception::parseArgs() noexcept {}
 
-	// Ctor:
+		// Ctor:
 
-		template <class... Args>
-		Exception::Exception(Args&&... args) noexcept :
-			excepts_  (),
-			excCount_ (1)
-		{
-			parseArgs(std::forward<Args>(args)...);
-		}
-
-	// What function:
-
-		const char* Exception::what() const noexcept
-		{
-			// 15 there (vvvv) is the approximate size of string "\n\nCaused by:\n\n"
-			static constexpr size_t outputSize = (_control::MAX_INFO_SIZE + 15) * _control::MAX_EXC_COUNT;
-			static char output[outputSize + 1]; 
-
-			// That is the initialisation for output
-			output[0] = '\0';
-
-			for (size_t excI = 0, strI = 0; excI < excCount_ && strI < outputSize - _control::NOT_ENOUGH_SPACE_SIZE; ++excI)
+			template <class... Args>
+			Exception::Exception(Args&&... args) noexcept :
+				excepts_  ({}),
+				excCount_ (1)
 			{
-				int written = std::sprintf(output + strI, "%s", excepts_[excI].info());
+				parseArgs(std::forward<Args>(args)...);
+			}
 
-				if (written < 0)
+		// What function:
+
+			const char* Exception::what() const noexcept
+			{
+				// 15 there (vvvv) is the approximate size of string "\n\nCaused by:\n\n"
+				static constexpr size_t outputSize = (_control::MAX_INFO_SIZE + 15) * _control::MAX_EXC_COUNT;
+				static char output[outputSize + 1];
+
+				// That is the initialisation for output
+				output[0] = '\0';
+
+				for (size_t excI = 0, strI = 0; 
+					excI < excCount_ && strI < outputSize - _control::NOT_ENOUGH_SPACE_SIZE; 
+					++excI)
 				{
-					std::sprintf(output + strI, "%s", _control::NOT_ENOUGH_SPACE);
-					break;
-				}
-
-				strI += written;
-
-				if (excI + 1 < excCount_)
-				{
-					written = std::sprintf(output + strI, "\n\nCaused by:\n");
+					int written = std::sprintf(output + strI, "%s", excepts_[excI].info());
 
 					if (written < 0)
 					{
@@ -470,11 +460,23 @@ namespace VaExc
 					}
 
 					strI += written;
-				}
-			}
 
-			return output;
-		}
+					if (excI + 1 < excCount_)
+					{
+						written = std::sprintf(output + strI, "\n\nCaused by:\n");
+
+						if (written < 0)
+						{
+							std::sprintf(output + strI, "%s", _control::NOT_ENOUGH_SPACE);
+							break;
+						}
+
+						strI += written;
+					}
+				}
+
+				return output;
+			}
 
 	// Really useful interface stuff:
 	using ArgMsg = _wrappers::ArgMsg;
