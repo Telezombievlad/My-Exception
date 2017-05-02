@@ -146,7 +146,10 @@ namespace VaExc
 		            Exception("Oh no! Exception happened!"_msg);
 		    @endcode
 		*/
-		constexpr _wrappers::ArgMsgConstexpr operator""_msg(const char* str, size_t) noexcept { return {str}; }
+		constexpr _wrappers::ArgMsgConstexpr operator""_msg(const char* str, size_t) noexcept 
+		{
+			return ArgMsgConstexpr(str);
+		}
 
 		/** @brief  Filename of the file in which Exception is created.
 
@@ -159,7 +162,10 @@ namespace VaExc
 
 		    @endcode
 		*/
-		constexpr _wrappers::ArgFilename operator""_file(const char* str, size_t) noexcept { return {str}; }
+		constexpr _wrappers::ArgFilename operator""_file(const char* str, size_t) noexcept
+		{
+			return ArgFilename(str);
+		}
 
 		/** @brief  Function name in which Exception is created.
 
@@ -174,7 +180,10 @@ namespace VaExc
 		            }
 		    @endcode
 		*/
-		constexpr _wrappers::ArgFunction operator""_func(const char* str, size_t) noexcept { return {str}; }
+		constexpr _wrappers::ArgFunction operator""_func(const char* str, size_t) noexcept
+		{
+			return ArgFunction(str);
+		}
 
 		/** @brief  Call line number in which Exception is created.
 
@@ -190,7 +199,7 @@ namespace VaExc
 		{
 			// Code can't have more then that(vvvv) lines.
 			// Human-made code can't.
-			return {static_cast<size_t>(line)};
+			return ArgLine(static_cast<size_t>(line));
 		}
 
 	} // namespace _literals
